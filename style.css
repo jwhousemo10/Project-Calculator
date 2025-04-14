@@ -1,0 +1,15 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.calculator {
+    width: 260px;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+}
