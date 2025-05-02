@@ -19,3 +19,10 @@ const display = document.getElementById('displayWindow');
     expression = '';
     updateDisplay('0');
   }
+
+  // Function updates display with whatever is passed to it, 
+  // i.e. function addToExpression(value) passes the value of the button clicked. 
+  // In this case, 'updateDisplay(content)' looks like this: updateDisplay(expression).
+  function updateDisplay(content) {
+    displayWindow.textContent = content;
+  }
