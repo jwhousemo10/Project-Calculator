@@ -86,3 +86,9 @@ const display = document.getElementById('displayWindow');
         result /= nextNumber;
       }
     }
+
+    // Equal sign added to end of expression, then adds final result number.
+    // The expression is updated to show the result.
+    expression += '=' + result;
+    updateDisplay(expression);
+  }
