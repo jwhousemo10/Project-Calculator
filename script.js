@@ -11,3 +11,11 @@ const display = document.getElementById('displayWindow');
     expression += value;
     updateDisplay(expression);
   }
+
+  // Function called when C (clear) button is clicked.
+  // Note: The function is called in the HTML file's onclick attribute.
+  // As it expects no input, upDateDisplay is called with a default value of 0.
+  function clearDisplay() {
+    expression = '';
+    updateDisplay('0');
+  }
