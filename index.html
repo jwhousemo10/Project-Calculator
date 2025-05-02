@@ -10,25 +10,25 @@
   <div class="calculator">
     <div class="displayWindow" id="displayWindow">0</div>
     <div class="buttons">
-      <button onclick="appendToExpression('7')">7</button>
-      <button onclick="appendToExpression('8')">8</button>
-      <button onclick="appendToExpression('9')">9</button>
-      <button class="operator" onclick="appendToExpression('+')">+</button>
+      <button onclick="addToExpression('7')">7</button>
+      <button onclick="addToExpression('8')">8</button>
+      <button onclick="addToExpression('9')">9</button>
+      <button class="operator" onclick="addToExpression('+')">+</button>
 
-      <button onclick="appendToExpression('4')">4</button>
-      <button onclick="appendToExpression('5')">5</button>
-      <button onclick="appendToExpression('6')">6</button>
-      <button class="operator" onclick="appendToExpression('-')">-</button>
+      <button onclick="addToExpression('4')">4</button>
+      <button onclick="addToExpression('5')">5</button>
+      <button onclick="addToExpression('6')">6</button>
+      <button class="operator" onclick="addToExpression('-')">-</button>
 
-      <button onclick="appendToExpression('1')">1</button>
-      <button onclick="appendToExpression('2')">2</button>
-      <button onclick="appendToExpression('3')">3</button>
-      <button class="operator" onclick="appendToExpression('*')">×</button>
+      <button onclick="addToExpression('1')">1</button>
+      <button onclick="addToExpression('2')">2</button>
+      <button onclick="addToExpression('3')">3</button>
+      <button class="operator" onclick="addToExpression('*')">*</button>
 
       <button class="control" onclick="clearDisplay()">C</button>
-      <button onclick="appendToExpression('0')">0</button>
-      <button class="equal" onclick="evaluateExpression()">=</button>
-      <button class="operator" onclick="appendToExpression('/')">÷</button>
+      <button onclick="addToExpression('0')">0</button>
+      <button class="equal" onclick="calculateExpression()">=</button>
+      <button class="operator" onclick="addToExpression('/')">/</button>
     </div>
   </div>
   <script src="script.js"></script>
