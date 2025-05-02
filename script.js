@@ -59,4 +59,30 @@ const display = document.getElementById('displayWindow');
     // When loop ends, '5' is still sitting in 'currentNumber' since no operator after it
     // to trigger push during loop. Last number is now pushed. 
     numbers.push(Number(currentNumber));
-  }
+
+    // First number in array is stored in variable.  
+    // Loop goes through operator in expression. 
+    // Next number, i.e. index 1, is added after operator.
+    // Looped operator is stored in variable.
+    let result = numbers[0];
+    for (let i = 0; i < operators.length; i++) {
+      let nextNumber = numbers[i + 1];
+      let currOperator = operators[i];
+    // Checks which operator is used, and performs the operation on the result.
+      // If division by zero is attempted, an error message is displayed.
+      // The expression is reset to an empty string.
+      if (currOperator === '+') {
+        result += nextNumber;
+      } else if (currOperator === '-') {
+        result -= nextNumber;
+      } else if (currOperator === '*') {
+        result *= nextNumber;
+      } else if (currOperator === '/') {
+        if (nextNumber === 0) {
+          updateDisplay('Error');
+          expression = '';
+          return;
+        }
+        result /= nextNumber;
+      }
+    }
