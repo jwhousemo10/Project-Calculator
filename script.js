@@ -26,3 +26,15 @@ const display = document.getElementById('displayWindow');
   function updateDisplay(content) {
     displayWindow.textContent = content;
   }
+
+  // Function called when equals button '=' is clicked.
+  // Empty arrays for numbers and operators: As inputs are looped through, they're
+  // pushed to the appropriate array.
+  // currentNumber, a string that stores current number being built, e.g. '12' as 
+  // input '1' and '2' is clicked. Onces the operator is clicked, currentNumber is pushed to
+  // numbers array, and the operator is pushed to the operators array.
+  function calculateExpression() {
+    let numbers = [];
+    let operators = [];
+    let currentNumber = '';
+  }
